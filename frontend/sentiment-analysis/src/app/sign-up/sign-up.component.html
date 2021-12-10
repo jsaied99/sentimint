@@ -1,0 +1,63 @@
+<mat-card class="example-card">
+    <mat-card-title class="center" id="title">Sign Up</mat-card-title>
+    <mat-card-content>
+      <form [formGroup]="signUpForm">
+        <div class="center">
+            <mat-form-field appearance="fill" appearance="outline">
+              <input type="text" matInput formControlName="fname" placeholder="First Name"/>
+            </mat-form-field>
+            <div *ngIf="fname?.invalid && fname?.touched">
+              <div class="error">First Name is Required</div>
+            </div>
+          </div>
+          <div class="center">
+            <mat-form-field appearance="fill" appearance="outline">
+              <input type="text" matInput formControlName="lname" placeholder="Last Name"/>
+            </mat-form-field>
+            <div *ngIf="lname?.invalid && lname?.touched">
+              <div class="error">Last Name is Required</div>
+            </div>
+          </div>
+        <div class="center">
+        <mat-form-field appearance="fill" appearance="outline">
+          <input type="text" matInput formControlName="email" placeholder="Email"/>
+        </mat-form-field>
+        <div *ngIf="email?.invalid && email?.touched">
+          <div class="error">Email is Required</div>
+        </div>
+      </div>
+      <div class="center">
+        <mat-form-field appearance="fill" appearance="outline">
+          <input type="password" matInput formControlName="password" placeholder="Choose Password">
+        </mat-form-field>
+        <div *ngIf="password?.invalid && password?.touched">
+          <div class="error">Password is Required</div>
+        </div>
+        <div *ngIf="f.password.errors?.minlength">
+          <div class="error">Password must be at least 6 characters</div>
+        </div>
+      </div>
+      <div class="center">
+        <mat-form-field appearance="fill" appearance="outline">
+          <input type="password" matInput formControlName="confirmPassword" placeholder="Confirm Password">
+        </mat-form-field>
+        <div *ngIf="f.confirmPassword.errors?.required && confirmPassword?.touched">
+          <div class="error">Confirm Password is Required</div>
+        </div>
+        <div *ngIf="f.confirmPassword.errors?.minlength">
+          <div class="error">ConfirmPassword must be at least 6 characters</div>
+        </div>
+        <div *ngIf="f.confirmPassword.errors?.confirmedValidator">
+          <div class="error">Password and Confirm Password must match</div>
+        </div>
+        <!-- <div class="demo">Password: {{password?.value}}</div>
+        <div class="demo">ConfirmPassword: {{confirmPassword?.value}}</div> -->
+      </div>
+      </form> 
+      <button mat-button class="center" (click)="createUser()" type="submit" ng-disabled="signUpForm.$invalid">Sign Up</button>
+    </mat-card-content>
+      <div>
+        <button mat-button routerLink="/login" >Back to Login</button>
+      </div>
+  </mat-card>
+  

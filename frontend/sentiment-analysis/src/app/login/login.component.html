@@ -1,0 +1,36 @@
+
+<mat-card class="example-card">
+    <mat-card-title class="center" id="title">Login</mat-card-title>
+    <mat-card-content>
+      <form [formGroup]="loginForm" id="form">
+        <div class="center">
+        <mat-form-field appearance="fill" appearance="outline">
+          <input required type="text" matInput formControlName="email" placeholder="Email"/>
+        </mat-form-field>
+        <div *ngIf="email?.invalid && email?.touched">
+          <div class="error">Email is Required</div>
+        </div>
+      </div>
+      <div class="center">
+        <mat-form-field appearance="fill" appearance="outline" has-success>
+          <input required type="password" matInput formControlName="password" placeholder="Password" (keyup)="handleKeyUp($event)">
+        </mat-form-field>
+        <div *ngIf="password?.invalid && password?.touched">
+          <div class="error">Password is Required</div>
+        </div>
+        <div *ngIf="loginError">
+          <div class="error">{{loginError}}</div>
+        </div>
+      </div>
+      </form> 
+      <button mat-button class="center" (click)="onLogin()">Sign In</button>
+    </mat-card-content>
+      <div>
+        <p class="center">Don't have an account?</p>
+        <button mat-button routerLink="/signUp">Sign Up</button>
+      </div>
+  </mat-card>
+
+
+  
+  

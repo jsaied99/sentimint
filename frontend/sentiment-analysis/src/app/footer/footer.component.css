@@ -1,0 +1,37 @@
+mat-toolbar {
+    position: relative;
+    height: 20%;
+}
+
+img {
+    transform: scale(0.75);
+    height: 102.63158416748047px;
+    width: 400px;
+    left: 103px;
+    top: 1369px;
+}
+
+#column1 {
+    width: 100px;
+    height: 129.74px;
+}
+
+#column2 {
+    padding-left: 5%;
+    width: 100px;
+    height: 113.07px;
+}
+
+#column3 {
+    padding-left: 5%;
+    width: 100px;
+    height: 100.25px;
+}
+
+#columns {
+    position: absolute;
+    transform: scale(0.80);
+    margin-left: 75%;
+    top: 0.5px;
+    bottom: 0%;
+}

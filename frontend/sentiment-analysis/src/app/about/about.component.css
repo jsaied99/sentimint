@@ -1,0 +1,36 @@
+body {
+    position: relative;
+}
+
+.iconContainer {
+    position: absolute;
+    top: 27.5em;
+    left: 30%;
+    max-width: 2%;
+}
+
+.material-icons-outlined {
+    transform: scale(20);
+}
+
+.aboutContainer {
+    position: absolute;
+    top: 12.5em;
+    left: 50%;
+    margin-right: 20em;
+}
+
+.aboutHeader {
+    margin-bottom: 5%;
+    /* font-weight: bold; */
+    font-size: 500%;
+}
+
+.contactHeader {
+    /* font-weight: bold; */
+    font-size: 150%;
+}
+
+p {
+    font-size: 125%;
+}

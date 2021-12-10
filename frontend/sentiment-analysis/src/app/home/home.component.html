@@ -1,0 +1,35 @@
+<div class="center">
+    <form id="form" [formGroup]="hashtagSentimentForm">
+      <label>Topic to analyze </label>
+      <mat-form-field appearance="fill" appearance="outline">
+        <input type="text" matInput formControlName="hashtag">
+      </mat-form-field>
+      <label>Number of Tweets</label>
+      <mat-form-field id="numTweetsInput" appearance="fill" appearance="outline">
+        <input type="number" matInput formControlName="tweetsNum" min="10" max="100" step="10" value="10">
+      </mat-form-field>
+    </form>
+    <div id="buttons">
+      <div id="errorTextBox">
+        <h3 id="errorText" *ngIf="error">{{ error }}</h3>
+      </div>
+      <div id="buttonBox">
+        <button mat-raised-button color="primary" (click)="analyzeTweets()">Analyze</button>
+      </div>
+    </div>
+    <div id="resultsGrid" *ngIf="dataLoaded">
+      <app-pie-chart id="chart" #pieChart [data]="rawData" [hashtag]="hashTagSearchValue"></app-pie-chart>
+      <app-scatter-plot id="chart" #scatterPlot [data]="rawData" [hashtag]="hashTagSearchValue"></app-scatter-plot>
+      <div id="hashtagData">
+        <h1 id="hashtagDataHeader">{{ hashTagSearchValue }} Data</h1>
+        <mat-list role="list">
+          <mat-list-item role="listitem">Tweets Analyzed: {{ numberOfTweets }}</mat-list-item>
+          <mat-list-item role="listitem">Average Sentiment: {{ averageSentiment }}</mat-list-item>
+          <mat-list-item role="listitem">Average Sentiment Interpretation: {{ averageSentimentInterpretation }}</mat-list-item>
+        </mat-list>
+      </div>
+    </div>
+  <div class="spinner-div" *ngIf="loading">
+    <mat-spinner></mat-spinner>
+  </div>
+</div>

@@ -1,0 +1,103 @@
+{
+    "data": [
+        {
+            "body": "art is cool!",
+            "sentiment": 1
+        },
+        {
+            "body": "shingeki is the best",
+            "sentiment": 0.9148336069157196
+        },
+        {
+            "body": "shingeki is the best anime",
+            "sentiment": 0.6369
+        },
+        {
+            "body": "Vegetables are the worst",
+            "sentiment": -0.6249
+        },
+        {
+            "body": "Steak is the best meal!",
+            "sentiment": 0.6696
+        },
+        {
+            "body": "everything is expensive",
+            "sentiment": 0
+        },
+        {
+            "body": "everything is very expensive",
+            "sentiment": 0
+        },
+        {
+            "body": "I don't like you",
+            "sentiment": -0.2755
+        },
+        {
+            "body": "I like you",
+            "sentiment": 0.3612
+        },
+        {
+            "body": "I like beer",
+            "sentiment": 0.3612
+        },
+        {
+            "body": "I like beer a lot!",
+            "sentiment": 0.4199
+        },
+        {
+            "body": "jaden sucks",
+            "sentiment": -0.3612
+        },
+        {
+            "body": "jaden really sucks",
+            "sentiment": -0.4201
+        },
+        {
+            "body": "cameron really sucks",
+            "sentiment": -0.4201
+        },
+        {
+            "body": "daniel really sucks",
+            "sentiment": -0.4201
+        },
+        {
+            "body": "jamal is the best programmer",
+            "sentiment": 0.6369
+        },
+        {
+            "body": "daniel sucks as a programmer ",
+            "sentiment": -0.3612
+        },
+        {
+            "body": "This wallet bought roughly $8,000 of $SHIB last August. It's now worth $5.7 billion.  From 8,000 to $5.7 billion in roughly 400 days. We may actually be looking at the greatest individual trade of all time. This wallet bought roughly $8,000 of $SHIB last August. It's now worth $5.7 billion.  From 8,000 to $5.7 billion in roughly 400 days. We may actually be looking at the greatest individual trade of all time.",
+            "sentiment": 0.9042
+        },
+        {
+            "body": "SpaceX and NASA are launching a rocket tomorrow to practice planetary defense in case we need to defend Earth from asteroids in the future.",
+            "sentiment": 0.128
+        },
+        {
+            "body": "hhqqteyvlpuogozqznitddxbcwpqiykaptzazgmhlsvbamjrmv",
+            "sentiment": 0
+        },
+        {
+            "body": [
+                "SpaceX and NASA are launching a rocket tomorrow to practice planetary defense in case we need to defend Earth from asteroids in the future.",
+                "SpaceX and NASA are launching a rocket tomorrow to practice planetary defense in case we need to defend Earth from asteroids in the future.",
+                "SpaceX and NASA are launching a rocket tomorrow to practice planetary defense in case we need to defend Earth from asteroids in the future.",
+                "SpaceX and NASA are launching a rocket tomorrow to practice planetary defense in case we need to defend Earth from asteroids in the future.",
+                "SpaceX and NASA are launching a rocket tomorrow to practice planetary defense in case we need to defend Earth from asteroids in the future."
+            ],
+            "sentiment": 1
+        },
+        {
+            "body": "SpaceX and NASA are launching a rocket tomorrow to practice planetary defense in case we need to defend Earth from asteroids in the future.",
+            "sentiment": 1
+        },
+        {
+            "body": "I like beer",
+            "sentiment": 0.3612
+        }
+    ],
+    "status": 1
+}

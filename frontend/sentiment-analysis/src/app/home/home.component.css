@@ -1,0 +1,150 @@
+/* input color class */
+::ng-deep input.mat-input-element {
+    color: #110d0d;
+  }
+
+  /* Change label color on focused */
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: #50d0fb !important;
+  }
+
+  /* underline border color on focused */
+  ::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple{
+    background-color: #50d0fb !important;
+  }
+
+/* border-radius change: https://stackoverflow.com/questions/66484113/change-increase-border-radius-of-mat-form-field
+     -needs important tags
+     - Background color is all adjusted here
+*/
+
+::ng-deep .mat-form-field-outline-start {
+  border-radius: 28px 0 0 28px !important;
+  min-width: 28px !important;
+  background-color: white;
+}
+
+::ng-deep .mat-form-field-outline-end {
+  border-radius: 0 28px 28px 0 !important;
+  background-color: white;
+}
+
+  ::ng-deep .mat-form-field-outline {
+    border-radius: 28px 28px 28px 28px !important;
+    background-color: #ffffff;
+    box-shadow: 00px 0px 10px -2px #222222;
+  }
+::placeholder {
+    color: black;
+    font-size: medium;
+}
+
+
+  /*.ng-invalid {*/
+  /*  color: red;*/
+  /*}*/
+
+
+mat-form-field {
+  width: 100%;
+  color: black;
+  align-self: center;
+}
+
+#form, #buttons {
+  display: grid;
+  width: 60%;
+}
+
+#form {
+  margin-top: 5%;
+  grid-template-columns: 7% 93%;
+}
+
+#buttons {
+  width: 60%;
+  text-align: right;
+  grid-template-columns: 28% 37% 35%;
+}
+
+.inputLabel {
+  display: inline;
+}
+
+#numTweetsInput {
+  width: 20%;
+}
+
+#buttonBox {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+button {
+  margin-left: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#resultsGrid {
+  display: grid;
+  grid-template-columns: 25.33% 25.33% 25.33%;
+  grid-template-rows: 70% 30%;
+  height: 400px;
+  width: 90%;
+  margin-top: 3%;
+  column-gap: 12%;
+}
+
+#chart {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#hashtagData {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  box-shadow: 7px 8px 15px -1px #cbcbcb;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+#hashtagDataHeader {
+  text-align: center;
+}
+
+.mat-list-base .mat-list-item {
+  color: black;
+}
+
+/* Make arrows always visible: https://stackoverflow.com/questions/56597431/how-to-always-show-the-increment-arrows-in-a-matinput-of-type-number/56597746*/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+/*End make arrows visible*/
+
+.spinner-div {
+  position: absolute;
+  left: 51%;
+  top: 50vh;
+}
+
+#errorText {
+  color: red;
+  font-size: 18px;
+}
+
+#errorTextBox {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+

@@ -1,0 +1,68 @@
+img {
+    width: 50px;
+    height: 50px;
+}
+
+#navHeader {
+  
+  /* font-weight: bold; */
+}
+
+#tabs {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+button {
+
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.spacer {
+    flex: 1 1 auto;
+  }
+
+  /*
+ * Actual Sticky Footer Styles
+ */
+.all-wrap {
+    min-height: 100vh;
+  }
+  
+  .page-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  button {
+    border-radius: 5EM 5EM;
+  }
+  /*
+   * Make the Component injected by Router Outlet full height:
+   */
+
+   /* #cart{
+
+   } */
+
+
+
+   mat-toolbar {
+    background-color: transparent;
+    color: white;
+   }
+
+   .navContain {
+     left: 30%;
+   }
+
+   .active {
+     box-shadow: 0px 0px 10px #222222;
+   }

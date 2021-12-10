@@ -1,0 +1,82 @@
+
+
+#title {
+    padding-top: 15%;
+    padding-bottom: 8%;
+}
+
+#form {
+    padding-bottom: 8%;
+}
+button {
+    display: block;
+    margin: auto;
+    font-size: large;
+}
+.example-card {
+    position: absolute;
+    top: 12%;
+    left: 35%;
+    width: 30%;
+    background-color: #516168;
+    z-index: 1000;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+#MU {
+width: 150px;
+height: 160.6px;
+left: 1040px;
+top: 237px;
+margin: auto;
+display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+mat-form-field {
+    width: 75%;
+    color: black;
+}
+
+.error {
+    color: orange;
+}
+/* border-radius change: https://stackoverflow.com/questions/66484113/change-increase-border-radius-of-mat-form-field 
+     -needs important tags
+     - Background color is all adjusted here
+*/
+::ng-deep .mat-form-field-outline-start {
+    border-radius: 28px 0 0 28px !important;
+    min-width: 28px !important;
+    background-color: white;
+  }
+
+  ::ng-deep .mat-form-field-outline-end {
+    border-radius: 0 28px 28px 0 !important;
+    background-color: white;
+  }
+::placeholder {
+    color: black;
+    font-size: medium;
+}
+  ::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    background-color: green !important;
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: green !important;
+  } 
+  
+  ::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: green !important;;
+  }
+
